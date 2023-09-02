@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   text-decoration: none;
   border: none;
   outline: none;
@@ -17,7 +17,7 @@
   --white-color: #fff;
   --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
   --pages-color: linear-gradient(90deg, #fff, #ddd);
-  --border: 125rem solid #00abf0;
+  --border: 1px solid #00abf0;
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
 }
 
@@ -35,7 +35,6 @@ body {
   width: 66rem;
   height: 45rem;
   padding: 2rem;
-  background: red;
 }
 
 .cover {
@@ -73,8 +72,116 @@ body {
   background: var(--pages-color);
   box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
   display: flex;
+  padding: 2rem;
 }
 
 .profile-page {
-  background: seagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-page img {
+  max-width: 180px;
+  border-radius: 50%;
+  border: 0.25rem solid var(--main-color);
+  margin-bottom: 0.8rem;
+}
+
+.profile-page h1 {
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.profile-page h3 {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.profile-page .social-media {
+  margin: 0.6rem 0 0.8rem;
+}
+
+.profile-page .social-media a {
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: var(--border);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: var(--main-color);
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.2rem;
+  transition: 0.5s;
+}
+
+.profile-page .social-media a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+.profile-page p {
+  text-align: justify;
+}
+
+.profile-page .btn-box {
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-flex;
+  width: 9.5rem;
+  height: 3rem;
+  background: var(--main-color);
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: var(--white-color);
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2) {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+.book-page.page-right {
+  position: absolute;
+  right: 0;
+  transform-style: preserve-3d;
+}
+
+.book-page .page-front,
+.book-page .page-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--pages-color);
+  padding: 1.5rem 2rem;
+}
+
+.book-page .page-front {
+  transform: rotateY(0deg) translateZ(1px);
+}
+
+.book-page .page-back {
+  transform: rotateY(180deg) translateZ(1px);
 }

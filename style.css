@@ -295,8 +295,59 @@ body {
 .skills-box {
   display: flex;
   flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .skills-box .skills-content {
-  background: red;
+  flex: 1 1 20rem;
+}
+
+.skills-content h3 {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.skills-content .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skills-content .content span {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 5rem;
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.skills-content .content span i {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.highlight-ex {
+  line-height: 3rem;
+  color: #00abf0;
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.icon-text iconify-icon {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+.icon-text {
+  color: black;
+}
+
+.skills-content .content span:hover {
+  box-shadow: var(--box-shadow);
 }

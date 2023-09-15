@@ -15,7 +15,7 @@
   --main-color: #00abf0;
   --text-color: #333;
   --second-text-color: #555;
-  --white-color: #fff;
+  --white-color: #6b4444444;
   --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
   --pages-color: linear-gradient(90deg, #fff, #ddd);
   --border: 1px solid #00abf0;
@@ -31,7 +31,6 @@ body {
   color: var(--text-color);
   overflow: hidden;
 }
-
 .wrapper {
   position: relative;
   width: 66rem;
@@ -358,7 +357,7 @@ body {
 }
 
 .skills-content .content span i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--main-color);
 }
 
@@ -504,4 +503,117 @@ body {
   opacity: 1;
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
+}
+@media screen and (min-width: 720px) and (max-width: 1520px) {
+
+  }
+
+  .profile-page h1 {
+    font-size: 1.7rem;
+  }
+
+  .profile-page p {
+    font-size: 15px;
+  }
+
+  .profile-page h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .workeduc-box .workeduc-content p {
+    font-size: 13px;
+  }
+  .services-box {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+
+  .services-box .services-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.5rem 1.1rem;
+    text-align: center;
+    transition: 0.3 ease;
+    height: 7.5rem;
+    width: 2rem;
+  }
+
+  .services-content i {
+    font-size: 1.2rem;
+    color: var(--main-color);
+  }
+
+  .services-content h3 {
+    font-size: 1rem;
+  }
+
+  .services-content p {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .services-content .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 13px;
+  }
+
+  .skills-content .content span i {
+    font-size: 1.5rem;
+  }
+
+  .highlight-ex {
+    line-height: 1.5rem;
+    color: #00abf0;
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .icon-text iconify-icon {
+    color: var(--main-color);
+    font-size: 1.5rem;
+  }
+
+  .skills-content .content span {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 3.5rem;
+    border: var(--border);
+    border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s ease;
+  }
+
+  .portfolio-box .info-box .info-title h3 {
+    font-size: 15px;
+  }
+
+  .tech-used {
+    font-size: 14px;
+  }
+
+  .info-box p {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
 }

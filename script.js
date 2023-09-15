@@ -82,3 +82,32 @@ pages.forEach((_, index) => {
     }, 500);
   }, (index + 1) * 200 + 2100);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const scriptURL =
+    'https://script.google.com/macros/s/AKfycbwCFw4aLxm3l7igCBfUNOPGn78LxbhwFghEK2UiB4eTpFwNkOQm92nYE-lpdv5y3C2p/exec';
+  const form = document.getElementById('contact-form');
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.result === 'success') {
+          msg.innerHTML = 'Message Sent';
+          setTimeout(function () {
+            msg.innerHTML = '';
+          }, 3000);
+          form.reset();
+        } else {
+          msg.innerHTML = 'Message not sent. Please try again later.';
+        }
+      })
+      .catch((error) => {
+        msg.innerHTML = 'Error sending the message. Please try again later.';
+        console.error('Error!', error);
+      });
+  });
+});

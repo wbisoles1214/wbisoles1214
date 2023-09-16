@@ -518,7 +518,7 @@ form[name='submit-to-google-sheet'] input[type='email'] {
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
-@media screen and (min-width: 620px) and (max-width: 1520px) {
+@media screen and (min-width: 720px) and (max-width: 1520px) {
   .profile-page h1 {
     font-size: 1.7rem;
   }

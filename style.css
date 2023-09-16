@@ -15,7 +15,7 @@
   --main-color: #00abf0;
   --text-color: #333;
   --second-text-color: #555;
-  --white-color: #6b4444444;
+  --white-color: #fff;
   --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
   --pages-color: linear-gradient(90deg, #fff, #ddd);
   --border: 1px solid #00abf0;
@@ -31,6 +31,7 @@ body {
   color: var(--text-color);
   overflow: hidden;
 }
+
 .wrapper {
   position: relative;
   width: 66rem;
@@ -357,7 +358,7 @@ body {
 }
 
 .skills-content .content span i {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--main-color);
 }
 
@@ -442,7 +443,8 @@ body {
   text-align: center;
 }
 
-.contact-box .field {
+.form input,
+textarea {
   width: 100%;
   background: transparent;
   border: var(--border);
@@ -453,8 +455,20 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.contact-box .field::placeholder {
-  color: var(--text-color);
+form[name='submit-to-google-sheet'] input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: var(--border);
+  border-radius: 5px;
+}
+
+form[name='submit-to-google-sheet'] input[type='text'] {
+  background-color: transparent;
+}
+
+form[name='submit-to-google-sheet'] input[type='email'] {
+  background-color: transparent;
 }
 
 .contact-box textarea {
@@ -504,10 +518,7 @@ body {
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
-@media screen and (min-width: 720px) and (max-width: 1520px) {
-
-  }
-
+@media screen and (min-width: 620px) and (max-width: 1520px) {
   .profile-page h1 {
     font-size: 1.7rem;
   }

@@ -251,36 +251,30 @@
 
           <div class="page-back">
             <h1 class="title">Contact Me!</h1>
-          
+
             <div class="contact-box">
-              <form id="contact-form" action="#">
+              <form name="submit-to-google-sheet">
                 <input
                   type="text"
-                  class="field"
-                  placeholder="Full Name"
+                  name="Name"
+                  placeholder="Your Name"
                   required
                 />
                 <input
                   type="email"
-                  class="field"
-                  placeholder="Email Address"
+                  name="Email"
+                  placeholder="Your Email"
                   required
                 />
                 <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  class="field"
+                  name="Message"
+                  rows="6"
                   placeholder="Your Message"
-                  required
                 ></textarea>
-                <input type="submit" class="btn" value="Send Message" />
+                <button type="submit" class="btn btn2">Submit</button>
               </form>
-              <div id="msg"></div>
+              <span id="msg"></span>
             </div>
-          </div>
-          
 
             <span class="number-page">6</span>
 

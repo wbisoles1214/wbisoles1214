@@ -305,12 +305,12 @@ body {
 }
 
 .services-content i {
-  font-size: 2.5rem;
+  font-size: 5.5rem;
   color: var(--main-color);
 }
 
 .services-content h3 {
-  font-size: 1.1rem;
+  font-size: 1.7rem;
 }
 
 .services-content p {
@@ -430,6 +430,10 @@ body {
   font-weight: 600;
 }
 
+.paragraph {
+  font-size: 12px;
+}
+
 .portfolio-box .btn-box {
   display: flex;
   justify-content: center;
@@ -518,7 +522,7 @@ form[name='submit-to-google-sheet'] input[type='email'] {
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
-@media screen and (min-width: 620px) and (max-width: 1520px) {
+@media screen and (min-width: 720px) and (max-width: 1520px) {
   .profile-page h1 {
     font-size: 1.7rem;
   }
@@ -563,12 +567,12 @@ form[name='submit-to-google-sheet'] input[type='email'] {
   }
 
   .services-content i {
-    font-size: 1.2rem;
+    font-size: 3.5rem;
     color: var(--main-color);
   }
 
   .services-content h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .services-content p {
@@ -621,7 +625,7 @@ form[name='submit-to-google-sheet'] input[type='email'] {
   }
 
   .info-box p {
-    font-size: 15px;
+    font-size: 10.5px;
   }
 
   .btn {

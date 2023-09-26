@@ -632,3 +632,64 @@ form[name='submit-to-google-sheet'] input[type='email'] {
     font-size: 13px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 696px) {
+  .profile-page img {
+    max-width: 65px;
+    border-radius: 50%;
+    border: 0.25rem solid var(--main-color);
+    margin-bottom: 0.8rem;
+  }
+
+  .profile-page h1 {
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+  }
+
+  .profile-page h3 {
+    font-size: 6px;
+  }
+  .profile-page .social-media a {
+    display: inline-flex;
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border: var(--border);
+    border-radius: 50%;
+    font-size: 7px;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.2rem;
+    transition: 0.5s;
+  }
+
+  .profile-page p {
+    text-align: justify;
+    font-size: 7px;
+  }
+
+  .btn {
+    display: inline-flex;
+    width: 50px;
+    height: 20px;
+    background: var(--main-color);
+    border: var(--border);
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    color: var(--white-color);
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    transition: 0.5s;
+  }
+  .btn-box a {
+    font-size: 5px;
+  }
+}

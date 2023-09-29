@@ -632,7 +632,7 @@ form[name='submit-to-google-sheet'] input[type='email'] {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 667px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .profile-page img {
     max-width: 65px;
     border-radius: 50%;
@@ -665,7 +665,7 @@ form[name='submit-to-google-sheet'] input[type='email'] {
     color: var(--main-color);
     justify-content: center;
     align-items: center;
-    margin: 0 0.2rem;
+    margin: 0 0.1rem;
     transition: 0.5s;
   }
 
@@ -706,8 +706,8 @@ form[name='submit-to-google-sheet'] input[type='email'] {
 
   .wrapper {
     position: relative;
-    width: 50rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     padding: 2rem;
     perspective: 250rem;
     animation: show-animate 2s forwards;
@@ -723,10 +723,21 @@ form[name='submit-to-google-sheet'] input[type='email'] {
   .workeduc-content .year i {
     margin-right: 0.1rem;
   }
+
   .nextprev-btn {
     font-size: 18px;
   }
   .number-page {
     font-size: 10px;
+  }
+
+  .services-content i {
+    font-size: 0.5rem;
+  }
+  .services-content h3 {
+    font-size: 0.4rem;
+  }
+  .services-box {
+    gap: 0.5rem;
   }
 }

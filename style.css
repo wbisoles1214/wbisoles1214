@@ -740,4 +740,12 @@ form[name='submit-to-google-sheet'] input[type='email'] {
   .services-box {
     gap: 0.5rem;
   }
+
+  .skills-content h3 {
+    font-size: 10px;
+  }
+
+  .skills-content .content span i {
+    font-size: 15px;
+  }
 }
